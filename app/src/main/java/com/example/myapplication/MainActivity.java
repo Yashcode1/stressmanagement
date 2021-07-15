@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.button);
+        Button button1 = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,6 +22,21 @@ public class MainActivity extends AppCompatActivity {
                 Intent myintent = new Intent(MainActivity.this,ChooseStressTypeActivity.class);
                 startActivity(myintent);
             }
+
+
         });
+
+                button1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent myintent = new Intent(MainActivity.this,webview_Activity.class);
+                        startActivity(myintent);
+                    }
+
+
+                });
+
+
+
     }
 }

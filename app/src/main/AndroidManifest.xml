@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".webview_Activity"></activity>
+        <activity android:name=".Custom_Progressbar"></activity>
+        <activity android:name=".webview_Activity" />
         <activity android:name=".circular_status_bar" />
         <activity android:name=".PresentStressActivity" />
         <activity android:name=".PerceivedStressActivity" />

@@ -14,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.button);
-        Button button1 = findViewById(R.id.button);
+        Button button1 = findViewById(R.id.button1);
+        Button button2 = findViewById(R.id.button2);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,12 +30,26 @@ public class MainActivity extends AppCompatActivity {
                 button1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent myintent = new Intent(MainActivity.this,webview_Activity.class);
-                        startActivity(myintent);
+                        Intent myintent1 = new Intent(MainActivity.this,webview_Activity.class);
+                        startActivity(myintent1);
                     }
 
 
+
                 });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(MainActivity.this,Custom_Progressbar.class);
+                startActivity(myintent2);
+            }
+
+
+
+        });
+
+
 
 
 

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 button1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent myintent1 = new Intent(MainActivity.this,webview_Activity.class);
+                        Intent myintent1 = new Intent(MainActivity.this,WebViewActivity.class);
                         startActivity(myintent1);
                     }
 

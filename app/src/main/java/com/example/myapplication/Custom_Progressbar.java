@@ -25,7 +25,7 @@ public class Custom_Progressbar extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while (pStatus <= 100) {
+                while (pStatus <= 40) {
                     handler.post(new Runnable() {
                         @Override
                         public void run() {

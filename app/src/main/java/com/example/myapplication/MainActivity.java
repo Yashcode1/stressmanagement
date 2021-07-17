@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Button button1 = findViewById(R.id.button1);
         Button button2 = findViewById(R.id.button2);
 
+        //stress type
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        //questionnair
                 button1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent myintent1 = new Intent(MainActivity.this,WebViewActivity.class);
+                        Intent myintent1 = new Intent(MainActivity.this,PrecievedStressStartAcivity.class);
                         startActivity(myintent1);
                     }
 
@@ -38,15 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
                 });
 
+                //progressbar
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myintent2 = new Intent(MainActivity.this,Custom_Progressbar.class);
                 startActivity(myintent2);
             }
-
-
-
         });
 
 

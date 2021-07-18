@@ -20,7 +20,7 @@ public class QuestionnairResultActivity extends AppCompatActivity {
         if (bundle != null) {
             value = bundle.getInt("stressresult");
 
-            resulttxt = findViewById(R.id.restext);
+            resulttxt = (TextView) findViewById(R.id.restxt);
             resulttxt.setText(String.valueOf(value));
         }
 

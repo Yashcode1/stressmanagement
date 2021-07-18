@@ -21,7 +21,8 @@
         android:layout_width="330dp"
         android:layout_gravity="center|center_horizontal"
         android:clickable="true"
-        app:cardElevation="10dp">
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/teal_200">
 
     <LinearLayout
 
@@ -36,7 +37,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             app:cardCornerRadius="250dp"
-            app:cardBackgroundColor="@color/white">
+            app:cardBackgroundColor="@color/teal_200">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="50dp"
@@ -57,10 +58,197 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Music"
-            android:textSize="20dp"/>
+            android:text="     Music"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Reliefcard1"
+        app:strokeWidth="1dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="100dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_width="330dp"
+        android:layout_gravity="center|center_horizontal"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/teal_200">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:elevation="100dp"
+            android:layout_margin="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="250dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="250dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/meditation"
+                        android:scaleType="fitCenter"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     Meditation"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Reliefcard2"
+        app:strokeWidth="1dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="100dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_width="330dp"
+        android:layout_gravity="center|center_horizontal"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/teal_200">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:elevation="100dp"
+            android:layout_margin="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="250dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="250dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/game"
+                        android:scaleType="fitCenter"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     Game"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Reliefcard3"
+        app:strokeWidth="1dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="100dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_width="330dp"
+        android:layout_gravity="center|center_horizontal"
+        android:clickable="true"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/teal_200">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:elevation="100dp"
+            android:layout_margin="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="250dp"
+                app:cardBackgroundColor="@color/teal_200">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="250dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/breath"
+                        android:scaleType="fitCenter"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     Breathing"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" practices"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
 
 </LinearLayout>

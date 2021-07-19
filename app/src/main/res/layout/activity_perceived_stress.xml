@@ -28,37 +28,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Instruction"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="The Following Ten Question quiz will ask you about your thoughts and feelings for the past month"
-                android:textSize="20dp"/>
-
-
-            <Button
-                android:id="@+id/startbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text="start quiz"/>
-
-
-        </LinearLayout>
-
         //Question 1
 
         <LinearLayout
@@ -235,12 +204,6 @@
                 android:text="10. In the last month, how often have you felt difficulties were piling up so high that
  you could not overcome them?"
                 android:textSize="20dp"/>
-
-            <Button
-                android:id="@+id/submitbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"/>
 
         </LinearLayout>
 

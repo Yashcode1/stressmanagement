@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal"
+tools:context=".QuestionnaireStart">
+<TextView
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Instruction"
+    android:textSize="20dp"/>
+
+<TextView
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="The Following Ten Question quiz will ask you about your thoughts and feelings for the past month"
+    android:textSize="20dp"/>
+
+
+<Button
+    android:id="@+id/buttonn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:text="start quiz"/>
+
+
+</LinearLayout>

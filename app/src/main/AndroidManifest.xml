@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".StressReliefActivities"></activity>
+        <activity android:name=".QuestionnaireEnd"></activity>
+        <activity android:name=".QuestionnaireStart" />
+        <activity android:name=".StressReliefActivities" />
         <activity android:name=".WebView" />
         <activity android:name=".Custom_Progressbar" />
         <activity android:name=".circular_status_bar" />

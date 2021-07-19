@@ -22,16 +22,6 @@ public class PerceivedStressActivity extends AppCompatActivity {
 
         ViewFlipper vf = (ViewFlipper) findViewById(R.id.vf);
 
-        Button btn = findViewById(R.id.startbutton);
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vf.showNext();
-                qst += 1;
-            }
-        });
-
 
         Button btn1 = findViewById(R.id.previousbutton);
 
@@ -48,19 +38,17 @@ public class PerceivedStressActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                vf.showNext();
+                if (qst == 9) {
+                    Intent myintent = new Intent(PerceivedStressActivity.this,QuestionnaireEnd.class);
+                    myintent.putExtra("stressresult", result);
+                    startActivity(myintent);
+                }
+                else {
+                    vf.showNext();
+                    qst += 1;
+                }
             }
         });
-
-        Button btn3 = findViewById(R.id.submitbutton);
-
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vf.showNext();
-            }
-        });
-
 
     }
 

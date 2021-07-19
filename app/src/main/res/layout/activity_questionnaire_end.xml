@@ -45,7 +45,7 @@
             android:textStyle="bold"
             android:textSize="30dp"
             android:text="10%"
-            android:textColor="#FF3D68"
+            android:textColor="#0099CC"
             android:id="@+id/txtProgress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

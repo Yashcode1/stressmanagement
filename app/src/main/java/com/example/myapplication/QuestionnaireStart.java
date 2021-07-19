@@ -13,7 +13,7 @@ public class QuestionnaireStart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questionnaire_start);
-        Button buttonn = findViewById(R.id.buttonn);
+        Button buttonn = findViewById(R.id.button);
 
         buttonn.setOnClickListener(new View.OnClickListener() {
             @Override

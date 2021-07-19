@@ -24,18 +24,21 @@ public class QuestionnaireEnd extends AppCompatActivity {
         if (bundle != null) {
             value = bundle.getInt("stressresult");
 
-            //resulttxt = (TextView) findViewById(R.id.restxt);
-            // resulttxt.setText(String.valueOf(value));
+            TextView resulttxt = (TextView) findViewById(R.id.stressleveltxt);
+            //resulttxt.setText(String.valueOf(value));
 
 
             TextView txtProgress = (TextView) findViewById(R.id.txtProgress);
             progressBar = (ProgressBar) findViewById(R.id.progressBar);
-            int percentage = (int)calc(value);
+
+            int stresspercentage = (int)calc(value);
+            int x= (int)calc(value);
+            resulttxt.setText(stresslevel(value));
 
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    while (pStatus >= percentage) {
+                    while (pStatus <= x) {
                         handler.post(new Runnable() {
                             @Override
                             public void run() {
@@ -56,7 +59,7 @@ public class QuestionnaireEnd extends AppCompatActivity {
     }
 
     public double calc (int v){
-        return v/40*100;
+        return (((double)v/40.0)*100);
 
     }
 

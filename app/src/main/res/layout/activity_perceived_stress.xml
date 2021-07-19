@@ -9,21 +9,20 @@
     tools:context=".PerceivedStressActivity">
 
     <TextView
+        android:paddingTop="40dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Perceived Stress Scale"
-        android:textSize="20dp"/>
+        android:textSize="30dp"/>
 
-    <TextView
-        android:id="@+id/restext"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text='result'
-        android:textSize="20dp"/>
+
 
     <ViewFlipper
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
         android:id="@+id/vf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -40,9 +39,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. In the last month, how often have you been upset because of something that
+                android:text="In the last month, how often have you been upset because of something that
  happened unexpectedly?"
-                android:textSize="20dp"/>
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -58,9 +57,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2. In the last month, how often have you felt that you were unable to control the
+                android:text="In the last month, how often have you felt that you were unable to control the
  important things in your life?"
-                android:textSize="20dp"/>
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -77,8 +76,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3. In the last month, how often have you felt nervous and stressed?"
-                android:textSize="20dp"/>
+                android:text="In the last month, how often have you felt nervous and stressed?"
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -94,9 +93,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4. In the last month, how often have you felt confident about your ability to handle
+                android:text="In the last month, how often have you felt confident about your ability to handle
  your personal problems?"
-                android:textSize="20dp"/>
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -112,8 +111,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5. In the last month, how often have you felt that things were going your way?"
-                android:textSize="20dp"/>
+                android:text="In the last month, how often have you felt that things were going your way?"
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -129,9 +128,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6. In the last month, how often have you found that you could not cope with
+                android:text="In the last month, how often have you found that you could not cope with
  all the things that you had to do?"
-                android:textSize="20dp"/>
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -147,9 +146,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7. In the last month, how often have you been able to control irritations in
+                android:text="In the last month, how often have you been able to control irritations in
  your life?"
-                android:textSize="20dp"/>
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -165,8 +164,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8. In the last month, how often have you felt that you were on top of things?"
-                android:textSize="20dp"/>
+                android:text="In the last month, how often have you felt that you were on top of things?"
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -182,9 +181,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9. In the last month, how often have you been angered because of things that
+                android:text="In the last month, how often have you been angered because of things that
  happened that were outside of your control?"
-                android:textSize="20dp"/>
+                android:textSize="25dp"/>
 
 
         </LinearLayout>
@@ -201,9 +200,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10. In the last month, how often have you felt difficulties were piling up so high that
+                android:text="In the last month, how often have you felt difficulties were piling up so high that
  you could not overcome them?"
-                android:textSize="20dp"/>
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -211,10 +210,14 @@
 
     </ViewFlipper>
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingBottom="30dp">
 
         <RadioButton android:id="@+id/radio1"
             android:layout_width="wrap_content"
@@ -254,16 +257,19 @@
     </RadioGroup>
 
     <LinearLayout
+        android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <Button
+            android:layout_marginRight="10dp"
             android:id="@+id/previousbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="preveious"/>
 
         <Button
+            android:layout_marginLeft="10dp"
             android:id="@+id/nextbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

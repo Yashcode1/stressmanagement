@@ -8,27 +8,46 @@ android:layout_height="wrap_content"
 android:orientation="vertical"
 android:gravity="center_horizontal"
 tools:context=".QuestionnaireStart">
-<TextView
-    android:layout_gravity="center_horizontal"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Instruction"
-    android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-<TextView
-    android:layout_gravity="center_horizontal"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="The Following Ten Question quiz will ask you about your thoughts and feelings for the past month"
-    android:textSize="20dp"/>
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instruction"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="The Following Ten Question quiz will ask you about your thoughts and feelings for the past month"
+            android:textSize="20dp"/>
 
 
-<Button
-    android:id="@+id/buttonn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:text="start quiz"/>
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/startbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="start quiz"/>
+
+
+    </LinearLayout>
 
 
 </LinearLayout>

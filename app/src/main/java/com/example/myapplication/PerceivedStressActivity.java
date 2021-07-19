@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
@@ -28,6 +29,7 @@ public class PerceivedStressActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                unchecked();
                 vf.showPrevious();
                 qst -= 1;
             }
@@ -38,6 +40,7 @@ public class PerceivedStressActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                unchecked();
                 if (qst == 9) {
                     Intent myintent = new Intent(PerceivedStressActivity.this,QuestionnaireEnd.class);
                     myintent.putExtra("stressresult", result);
@@ -88,8 +91,6 @@ public class PerceivedStressActivity extends AppCompatActivity {
                     }
 
             }
-            TextView rest = findViewById(R.id.restext);
-            rest.setText(result);
         }
 
 
@@ -124,14 +125,14 @@ public class PerceivedStressActivity extends AppCompatActivity {
                         if (checked) {
                             result += 0;
                         }
-
                 }
-
-            TextView rest = findViewById(R.id.restext);
-            rest.setText(result);
-
             }
         }
+
+    public void unchecked(){
+        RadioGroup radioGroup=findViewById(R.id.radiogrp);
+        radioGroup.clearCheck();
+    }
     }
 
 

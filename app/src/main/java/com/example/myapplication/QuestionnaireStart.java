@@ -13,7 +13,7 @@ public class QuestionnaireStart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questionnaire_start);
-        Button buttonn = findViewById(R.id.button);
+        Button buttonn = findViewById(R.id.startbutton);
 
         buttonn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,9 +21,6 @@ public class QuestionnaireStart extends AppCompatActivity {
                 Intent myintentQ = new Intent(QuestionnaireStart.this,PerceivedStressActivity.class);
                 startActivity(myintentQ);
             }
-
-
-
         });
 
     }

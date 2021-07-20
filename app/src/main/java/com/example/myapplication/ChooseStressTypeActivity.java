@@ -22,7 +22,7 @@ public class ChooseStressTypeActivity extends AppCompatActivity {
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent1 = new Intent(ChooseStressTypeActivity.this,PerceivedStressActivity.class);
+                Intent myintent1 = new Intent(ChooseStressTypeActivity.this,QuestionnaireStart.class);
                 startActivity(myintent1);
 
             }
